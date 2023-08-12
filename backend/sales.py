@@ -2,7 +2,7 @@ from flask import make_response, jsonify, request, Blueprint
 from flask_jwt_extended import get_jwt_identity, jwt_required
 from models import User, Sales, Product
 from app import db
-
+# sales
 sales = Blueprint("sales", __name__)
 
 @sales.route('/sales')
